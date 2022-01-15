@@ -1,0 +1,25 @@
+<html>
+	
+	<body>
+	<p style ="color:green">
+	
+	<%=flash[:book] %>	
+	</p>
+	
+	<p>
+	<storong>Title:</storong>
+ <%= @book.title %>
+<p/>
+<p>
+	<storong>Body:</storong>
+	<%= @book.body %>
+</p>
+<%= link_to "Edit",edit_book_path%>
+ |
+ <a class="back" href="/books">Back</a>
+</body>
+	
+	
+	
+</html>
+
